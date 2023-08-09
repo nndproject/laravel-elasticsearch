@@ -17,3 +17,6 @@ use Illuminate\Support\Facades\Route;
     return view('welcome');
 }); */
 Route::get('/', [App\Http\Controllers\TestingController::class, 'index']);
+Route::get('/lpse', [App\Http\Controllers\LpseController::class, 'index']);
+Route::get('/lpse/create', [App\Http\Controllers\LpseController::class, 'create']);
+Route::get('/lpse/delete', [App\Http\Controllers\LpseController::class, 'delete']);
